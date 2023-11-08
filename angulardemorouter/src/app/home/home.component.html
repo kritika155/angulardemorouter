@@ -1,0 +1,10 @@
+<p>home works!</p>
+<div>
+  <h1>{{ data }}</h1>
+  <h1>{{ subtitle }}</h1>
+  <ul *ngFor="let book of books">
+    <li [ngStyle]="{'color': book.isRed ? 'red' : 'green'}">
+      {{ book.name }}
+    </li>
+  </ul>
+</div>
